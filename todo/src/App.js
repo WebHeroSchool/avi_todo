@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+const flag = false;
+const count = 10;
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
+        <p style={{ color: "yellow", fontSize: 10 + 20 }}>Lorem, ipsum dolor.</p>
+        <p>{count}</p>
+        <p>{50}</p>
+        <p>{undefined}</p>
+        <p>{null}</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {flag ? "flag is true" : "flag is false"}
+          
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
