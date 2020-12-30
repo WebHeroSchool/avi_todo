@@ -1,8 +1,8 @@
 import logo from './logo.svg';
+import {count, length} from './number.js'
 import './App.css';
 
-const flag = false;
-const count = 10;
+
 
 function App() {
   return (
@@ -10,14 +10,8 @@ function App() {
       <header className="App-header">
 
         <p style={{ color: "yellow", fontSize: 10 + 20 }}>Lorem, ipsum dolor.</p>
-        <p>{count}</p>
-        <p>{50}</p>
-        <p>{undefined}</p>
-        <p>{null}</p>
-        <p>
-          {flag ? "flag is true" : "flag is false"}
-          
-        </p>
+        <p>Итого: {count * length}</p>
+        
 
       </header>
     </div>
