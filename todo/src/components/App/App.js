@@ -9,7 +9,7 @@ const App = () => {
   const items = [
     {
       value: 'Задача № 1',
-      isDone: true
+      isDone: false
     },
     {
       value: 'Задача № 2',
@@ -17,7 +17,7 @@ const App = () => {
     },
     {
       value: 'Задача № 3',
-      isDone: false
+      isDone: true
     }
   ];
 
