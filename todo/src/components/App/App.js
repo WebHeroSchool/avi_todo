@@ -17,7 +17,7 @@ const App = () => {
     },
     {
       value: 'Задача № 3',
-      isDone: true
+      isDone: false
     }
   ];
 
