@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from '../Item/Item';
-import style from './ItemList.module.css';
+// import style from './ItemList.module.css';
 
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ItemList( {items, onClickDone} ) {
+export default function ItemList( {items, onClickDone, onClickDelete} ) {
   const classes = useStyles();
 
   return (
@@ -25,6 +25,7 @@ export default function ItemList( {items, onClickDone} ) {
             isDone={item.isDone}
             id={item.id}
             onClickDone={onClickDone}
+            onClickDelete={onClickDelete}
           />
         );
       })}
