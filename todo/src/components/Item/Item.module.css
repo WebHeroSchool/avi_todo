@@ -1,0 +1,12 @@
+.item {
+  display: block;
+  padding: var(--pd);
+  background-color: var(--color-item);
+}
+
+.done {
+  display: block;
+  padding: var(--pd);
+  background-color: var(--color-bg);
+  text-decoration: line-through;
+}
