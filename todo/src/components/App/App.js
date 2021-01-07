@@ -17,17 +17,19 @@ class App extends React.Component {
       },
       {
         value: 'Задача № 3',
-        isDone: false
+        isDone: true
       }
     ]
   };
+
+  onClickDone = isDone => console.log(isDone);
 
   render() {
 
     return (<div className={style.wrapper}>
       <h1 className={style.title}>Список задач</h1>
       <InputItem />
-      <ItemList items={this.state.items} />
+      <ItemList items={this.state.items} onClickDone={this.onClickDone}/>
       <Footer count={5} />
     </div>
     );
