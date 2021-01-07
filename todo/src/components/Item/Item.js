@@ -11,14 +11,14 @@ import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-const Item = ({ value, isDone, onClickDone, id }) => (
+const Item = ({ value, isDone, classes, onClickDone }) => (
   
   <ListItem fullWidth>
     <ListItemIcon>
       <Checkbox
         checked={isDone}
         tabIndex={-1}
-        onClick={() => onClickDone(id)}
+        onClick={() => console.log(isDone)}
       />
     </ListItemIcon>
     <ListItemText primary={value} classes={{
