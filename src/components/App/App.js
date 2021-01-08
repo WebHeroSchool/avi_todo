@@ -7,18 +7,21 @@ const App = () => {
 
   const items = [
     {
-      value: 'Задача № 1'
+      value: 'Задача № 1',
+      isDone: false
     },
     {
-      value: 'Задача № 2'
+      value: 'Задача № 2',
+      isDone: false
     },
     {
-      value: 'Задача № 3'
+      value: 'Задача № 3',
+      isDone: false
     }
   ];
 
-  return (<div>
-    <h1>Список</h1>
+  return (<div className={style.wrapper}>
+    <h1 className={style.title}>Список задач</h1>
     <InputItem />
     <ItemList items={items} />
     <Footer count={5} />
