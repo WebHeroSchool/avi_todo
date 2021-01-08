@@ -2,7 +2,6 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import InputItem from '../InputItem/InputItem';
 import ItemList from '../ItemList/ItemList';
-
 import style from './App.module.css';
 
 const App = () => {
