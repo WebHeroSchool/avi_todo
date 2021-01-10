@@ -1,15 +1,3 @@
 .field {
-  padding: 0;
-}
-
-.field div {
-  margin: 0;
-  width: 100%;
-}
-
-.field label {
-  padding: 1em;
-}
-.field input {
-  padding: 1em;
+  padding: var(--pd);
 }
